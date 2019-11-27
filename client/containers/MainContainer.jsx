@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { cuboidData } from './MainContainerData.jsx';
 import Cuboid from '../components/Cuboid.jsx';
-import { useSpring, animated, interpolate } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
+
 
 
 export default () => {
@@ -10,9 +11,9 @@ export default () => {
 
   const [ isExploded, setIsExploded ] = useState(false);
 
-  const [ boxSpring, setBoxSpring ] = useSpring(() => ({scale: 0.3}));
+  const [ boxSpring, setBoxSpring ] = useSpring(() => ({scale: 0.4}));
 
-  const [ boxSpringToggle, setBoxSpringToggle ] = useState(false);
+  const [ boxSpringToggle, setBoxSpringToggle ] = useState(true);
 
   const clickButtonHandler = (action) => {
     switch(action) {
@@ -23,8 +24,6 @@ export default () => {
         setCuboidIndex(cuboidIndex > 0 ? cuboidIndex - 1 : cuboidData.cuboids.length - 1);
         break;
       case 'scale':
-        // 
-        console.log(`in clickButtonHandler with action = ${action}`);
         setBoxSpringToggle(!boxSpringToggle);
         break;
       case 'explode':
@@ -37,22 +36,18 @@ export default () => {
 
   useEffect(() => {
     if (boxSpringToggle === false) {
-      setBoxSpring({from: {scale: 1.0}, to: {scale: 0.3}});
+      setBoxSpring({from: {scale: 1.0}, to: {scale: 0.4}});
     } else {
-      setBoxSpring({from: {scale: 0.3}, to: {scale: 1.0}});
+      setBoxSpring({from: {scale: 0.4}, to: {scale: 1.0}});
     }
   }, [boxSpringToggle]);
 
  
-
   return (
     <div>
 
     <animated.div 
-      onClick={     () => clickButtonHandler('scale')}
-      style={{      transform: boxSpring.scale.interpolate(scale => `scale3d(${scale},${scale},${scale})`)
-
-                    }}>
+      style={{      transform: boxSpring.scale.interpolate(scale => `scale3d(${scale},${scale},${scale})`)}}>
 
     <Cuboid 
       size={        cuboidData.cuboids[cuboidIndex].size} 
@@ -61,23 +56,28 @@ export default () => {
 
     <button 
       onClick={     () => clickButtonHandler('previous')}
-      style={{      height: "100px", 
-                    width: "100px", 
-                    opacity: 0.5}}>
-                    {`PREV <<`}
+      className=    "menu-button">
+                    {`<< PREV`}
                     </button>
 
     <button 
       onClick={     () => clickButtonHandler('next')}
-      style={{      height: "100px", width: "100px", opacity: 0.5}}>
+      className=    "menu-button">
                     {`NEXT >>`}
                     </button>
 
     <button 
       onClick={     () => clickButtonHandler('explode')}
-      style={{      height: "100px", width: "100px", opacity: 0.5}}>
+      className=    "menu-button">
                     {`EXPLODE`}
                     </button>
+
+    <button 
+      onClick={     () => clickButtonHandler('scale')}
+      className=    "menu-button">
+                    {`ZOOM ${boxSpringToggle ? 'OUT' : 'IN'}`}
+                    </button>
+
     </div>
   );
 }

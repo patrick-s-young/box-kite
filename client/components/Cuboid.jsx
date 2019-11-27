@@ -8,14 +8,13 @@ export default ({size, imagePath, isExploded}) => {
         }, [isExploded]);
 
     return (
-        <div    id=        'box_container' 
+        <div    id=        'cuboid_container' 
                 style={{    width: size.width + 'px', 
                             height: size.height + 'px', 
                             left: (window.innerWidth / 2) - (size.width / 2),
-                            top: '100px'
-                        }}>
+                            top: '20vh'}}>
 
-        <div    id=         'box_anchor' 
+        <div    id=         'cuboid_anchor' 
                 className=  'animated'>
           
         <img    src={       imagePath.front} 

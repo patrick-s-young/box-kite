@@ -27,29 +27,12 @@ export const cuboidData =
             },
             imagePath: 
             {
-                front: '../assets/images/bttf-front_318x570.png',
-                back: '../assets/images/bttf-back_318x570.png',
-                top: '../assets/images/bttf-top_318x75.png',
-                bottom: '../assets/images/bttf-bottom_318x75.png',
-                left: '../assets/images/bttf-left_75x570.png',
-                right: '../assets/images/bttf-right_75x570.png',
-            }
-        },
-        {
-            size: 
-            { 
-                width: 250, 
-                height: 300, 
-                depth: 250, 
-            },
-            imagePath: 
-            {
-                front: '../assets/images/pat-front.png',
-                back: '../assets/images/pat-back.png',
-                top: '../assets/images/pat-top.png',
-                bottom: '../assets/images/pat-bottom.png',
-                left: '../assets/images/pat-side-b.png',
-                right: '../assets/images/pat-side-a.png',
+                front: '../assets/images/bttf-front-318x570.png',
+                back: '../assets/images/bttf-back-318x570.png',
+                top: '../assets/images/bttf-top-318x75.png',
+                bottom: '../assets/images/bttf-bottom-318x75.png',
+                left: '../assets/images/bttf-left-75x570.png',
+                right: '../assets/images/bttf-right-75x570.png',
             }
         },
         {      
@@ -61,12 +44,12 @@ export const cuboidData =
             },
             imagePath: 
             {
-                front: '../assets/images/book-front.png',
-                back: '../assets/images/book-back.png',
-                top: '../assets/images/book_top.png',
-                bottom: '../assets/images/book_bottom.png',
-                left: '../assets/images/book-side-pages.png',
-                right: '../assets/images/book-spine.png',
+                front: '../assets/images/book-front-400x537.png',
+                back: '../assets/images/book-back-400x537.png',
+                top: '../assets/images/book-top-400x125.png',
+                bottom: '../assets/images/book-bottom-400x125.png',
+                left: '../assets/images/book-left-125x537.png',
+                right: '../assets/images/book-right-125x537.png',
             }
         }]
 }
