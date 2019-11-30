@@ -1,5 +1,5 @@
 # BoxKite
-3D CSS Textured Animated Cuboid Generator using React and react-spring.
+Make Floating Boxes with CSS 3D
 ![bttf-3-980x750](https://user-images.githubusercontent.com/42591798/69761255-b4016180-111b-11ea-867f-f140920f82fc.gif)
 
 ## Running Locally
