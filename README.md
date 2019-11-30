@@ -7,7 +7,7 @@ Make Floating Boxes with CSS 3D
 Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
-git clone https://github.com/patrick-s-young/box-kite.git # or clone your own fork
+git clone https://github.com/patrick-s-young/BoxKite.git # or clone your own fork
 cd box-kite
 npm install
 npm start
