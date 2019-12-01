@@ -1,5 +1,5 @@
 # BoxKite
-Make Floating Boxes with CSS 3D Transfroms
+Make Floating Boxes with CSS 3D Transforms
 ![bttf-3-980x750](https://user-images.githubusercontent.com/42591798/69761255-b4016180-111b-11ea-867f-f140920f82fc.gif)
 
 ## Running Locally
