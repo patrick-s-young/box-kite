@@ -1,8 +1,6 @@
 # BoxKite
 ## Make Floating Boxes with CSS 3D Transforms
-```sh
 BoxKite renders WebGL-like 3D cuboids using CSS 3D Transforms. Since the 3D object is CSS, it can interact more seamlessly with any background HTML elements. For instance, imagine a BoxKite ad unit that starts in the corner of the page and expands to the center when clicked.
-```
 ![bttf-3-980x750](https://user-images.githubusercontent.com/42591798/69761255-b4016180-111b-11ea-867f-f140920f82fc.gif)
 
 ## Running Locally
