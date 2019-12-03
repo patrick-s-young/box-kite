@@ -31,3 +31,6 @@ Prev/Next Gallery
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+Thanks to @citrusvanilla and @jacobbanks for the initial inspiration.
