@@ -28,6 +28,11 @@ Prev/Next Gallery
 * [react-spring](https://www.react-spring.io/) - JavaScript spring-physics based animation library.
 * [webpack](https://webpack.js.org/) - Static module builder.
 
+## Authors
+
+* **Patrick Young** - [Patrick Young](https://github.com/patrick-s-young)
+* **Adam Stover** - [Adam Stover](https://github.com/adam-stover)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
