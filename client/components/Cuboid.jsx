@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-export default ({size, imagePath, isExploded}) => {
-        const [explodedMultiple, setExplodedMultipe] = useState(1.0);
-
-        useEffect(() => {
-                setExplodedMultipe(isExploded ? 1.2: 1.0);
-        }, [isExploded]);
+const Cuboid = ({size, imagePath, isExploded}) => {
+    const explodedMultiple = isExploded ? 1.2 : 1.0;
 
     return (
         <div    id=        'cuboid_container' 
@@ -47,4 +43,6 @@ export default ({size, imagePath, isExploded}) => {
         </div> 
         </div> 
     )
-  }
+}
+
+export default Cuboid;

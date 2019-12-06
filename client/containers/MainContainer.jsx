@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 
 
 
-export default () => {
+const MainContainer = () => {
 
   const [ cuboidIndex, setCuboidIndex ] = useState(0);
 
@@ -82,7 +82,4 @@ export default () => {
   );
 }
 
-
-
-
-
+export default MainContainer;
